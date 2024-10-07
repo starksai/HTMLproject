@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+
+<body style="background-color: #F6F5F2;">
+    <center >
+        <header style="background-color: #C73659;">
+            <h1>Order</h1>
+        </header>
+        <main>
+            <form action="result.html">
+                <section class="iteam_name">
+                    <label for="iteam">Iteam Name: </label>
+                    <input list="iteams" id="iteam" required>
+                    <datalist id="iteams">
+                        <option value="idly">idly</option>
+                        <option value="vada">vada</option>
+                        <option value="dosa">dosa</option>
+                        <option value="puri">puri</option>
+                        <option value="veg fried rice">veg fride rice</option>
+                        <option value="chicken fride rice">chicken fride rice</option>
+                        <option value="veg noodles">veg noodles</option>
+                        <option value="chicken noodles">chicken noodles</option>
+                        <option value="veg biryani">veg biryani</option>
+                        <option value="chicken biryani">chicken biryani</option>
+                        <option value="mutton biryani">mutton    biryani</option>
+                        <option value="fish biryani">fish biryani</option>
+                    </datalist>
+                    
+                </section>
+                <br>
+
+                <section class="quantity">
+                    <label for="quantity">quantity: </label>
+                    <input type="number" name="quantity" id="quantity" required>
+                </section>
+                <br>
+
+                <section class="address">
+                    <label for="address">Address: </label>
+                    <textarea name="" id="address"></textarea required>
+                </section><br>
+    
+                <section class="MOP" >
+                    <label for="MOP">Mode of payment: </label>
+                    <select name="" id="mop" required>
+                        <option value="upi" selected>UPI</option>
+                        <option value="cash">Cash</option>
+                        <option value="netbank" disabled>NetBanking</option>
+    
+                    </select>
+    
+                </section><br>
+    
+                <section>
+                    <button type="submit">Order Now</button>
+                </section>
+    
+            </form>
+        </main>
+    </center>
+</body>
+</html>

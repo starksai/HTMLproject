@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body style="background-color: #F6F5F2;">
+    <center>
+        <header style="background-color: #C73659;">
+            <h1 style="color: #151515;">FOOD MUNCH!</h1>
+            <nav>
+                <span>If you alread registred, please go to <a href="login.html">login</a> page.</span>
+            </nav>
+        </header>
+        <br><br>
+        <main style="background-color: #C73659;">
+            <fieldset>
+                <legend>
+                    food munch register form
+                </legend>
+                <form action="login.html">
+
+                    <section class="name">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Name here" id="name" pattern="[a-zA-Z ]{3,25}"
+                            title="Use only uppercase and lowercase. Minmun size is 3." required>
+                    </section>
+                    <br>
+
+                    <section class="username">
+                        <label for="usrename">Username</label>
+                        <input type="text" placeholder="usrename" id="usrename" pattern="[a-z0-9@$&_]{6,}"
+                            title="Use only lowercase, 0-9 digits, special characters @ $ & _ and minmun langth is 6. No spaces are allowed"
+                            required>
+                    </section>
+                    <br>
+
+                    <section class="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email..." required>
+
+                    </section>
+                    <br>
+
+                    <section class="password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password"
+                            pattern="(?=.*[A-Z]{1,})(?=.*[a-z]{1,})(?=.*[0-9]{1,})(?=.*[@#$_!]{1,}).{8,15}"
+                            title="Atleast one character from uppercase, lowercase, 0-9, ! @ # $ _ and minmun size is 8 and maxmum size is 15"
+                            required placeholder="password" >
+
+                    </section>
+                    <br>
+
+                    <section class="confirm_password">
+                        <label for="confirm_password">Password</label>
+                        <input type="text" name="confirm_password" id="confirm_password"
+                            pattern="(?=.*[A-Z]{1,})(?=.*[a-z]{1,})(?=.*[0-9]{1,})(?=.*[@#$_!]{1,}).{8,15}"
+                            title="Atleast one character from uppercase, lowercase, 0-9, ! @ # $ _ and minmun size is 8 and maxmum size is 15"
+                            required placeholder="Confirm password">
+
+                    </section>
+                    <br>
+
+                    <section class="submit">
+                        <button type="submit" >Submit</button>
+                    </section>
+                </form>
+            </fieldset>
+        </main>
+        <br>
+
+    <footer style="background-color: #C73659;">
+        <strong>Note:</strong> Remamber username and password.
+    </footer>
+    </center>
+</body>
+
+</html>
